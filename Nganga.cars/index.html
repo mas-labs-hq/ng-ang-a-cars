@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>Ng'ang'a Cars! | Premium Car Dealership in Kenya</title>
+    <meta name="description" content="Ng'ang'a Cars! is Kenya's premium car dealership. Explore our digital showroom of SUVs, sedans, pickups and hatchbacks. Book test drives, compare cars, and drive home today.">
+    <meta name="keywords" content="car dealership Kenya, buy car Nairobi, Toyota, Nissan, BMW, Mercedes, Subaru, Mazda, SUV, sedan, pickup">
+    <meta name="author" content="Ng'ang'a Cars!">
+    <meta name="theme-color" content="#08090C" id="meta-theme-color">
+
+    <!-- ═══ FAVICONS & ICONS (files in /icons/ with real extensions) ═══ -->
+    <!-- Belt and braces: the first icon below is EMBEDDED directly in    -->
+    <!-- this file as a data URI, so the tab icon shows on ANY server,    -->
+    <!-- even when opening index.html straight from disk with no server.  -->
+    <!-- The file-based links after it serve sharper multi-size icons.    -->
+    <!-- A root-level favicon.ico also exists for crawlers and browsers   -->
+    <!-- that request it by default. Extensionless copies of every icon   -->
+    <!-- (icons/favicon, icons/main.logo ...) are included as aliases.    -->
+    <link rel="icon" type="image/png" sizes="48x48" href="data:image/png;base64,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">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+
+    <!-- ═══ SOCIAL MEDIA SHARING (WhatsApp / Facebook / X previews) ═══ -->
+    <!-- IMPORTANT: crawlers (WhatsApp, Facebook, X) require an ABSOLUTE URL -->
+    <!-- for og:image. A relative path is ignored.                        -->
+    <!-- After you deploy, replace https://YOUR-DOMAIN.com below with your   -->
+    <!-- real domain. WhatsApp also prefers an image of at least 300x200px   -->
+    <!-- and under 300KB.                                                     -->
+    <meta property="og:title" content="Ng'ang'a Cars! | Premium Car Dealership in Kenya">
+    <meta property="og:description" content="Explore our digital showroom. Test drive booking, car comparison, and NgangaAI assistant.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://YOUR-DOMAIN.com/icons/og-image.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Ng'ang'a Cars! Drive Something Different">
+    <meta property="og:url" content="https://YOUR-DOMAIN.com/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ng'ang'a Cars! | Premium Car Dealership in Kenya">
+    <meta name="twitter:description" content="Kenya's premium digital showroom. Book a test drive today.">
+    <meta name="twitter:image" content="https://YOUR-DOMAIN.com/icons/og-image.png">
+
+    <!-- ═══ THEME: apply saved/light preference BEFORE first paint ═══ -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('nganga-theme');
+                var theme = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) { /* default dark */ }
+        })();
+    </script>
+
+    <!-- ═══ FONTS & STYLES ═══ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Satisfy&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ═══ PERFORMANCE: hero image + navbar logo start fetching NOW ═══ -->
+    <link rel="preload" as="image" href="images-cars/bmw-x3-2021-1.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="icons/main-logo.png">
+
+    <!-- ═══ LOADER FAILSAFE: runs independently of main.js ═══ -->
+    <!-- This inline script hides the loader NO MATTER WHAT.       -->
+    <!-- Even if main.js fails to load, has a syntax error, or     -->
+    <!-- the browser serves a cached old version of main.js,       -->
+    <!-- this script will still fire and free the user.             -->
+    <script>
+        (function() {
+            // Hard safety net: hide loader after 3.5s, no dependencies.
+            // main.js can call window.__hideLoader() earlier if it loads fine.
+            var loaderHidden = false;
+            window.__hideLoader = function() {
+                if (loaderHidden) return;
+                loaderHidden = true;
+                var loader = document.getElementById('loader');
+                var site = document.getElementById('site');
+                if (loader) loader.classList.add('hidden');
+                if (site) site.classList.add('visible');
+            };
+            // Primary: 3.5s unconditional hide
+            setTimeout(window.__hideLoader, 3500);
+            // Secondary safety net: 6s absolute hard stop
+            setTimeout(window.__hideLoader, 6000);
+            // Tertiary: hide on window load (if it fires), with small delay for animation
+            window.addEventListener('load', function() {
+                setTimeout(window.__hideLoader, 1800);
+            });
+        })();
+    </script>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     LOADING SCREEN
+     The brand logo is EMBEDDED as a data URI: it renders
+     instantly with zero network requests, on any server.
+═══════════════════════════════════════ -->
+<div id="loader">
+    <div class="loader-brand">
+        <div class="loader-emblem">
+            <img id="loaderLogo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAABBGElEQVR42u29eZxmVXXv/V17n+mZa+rqaqCZRQRRaGVoBlFQmdRoEjUKikqEeDVBk3uTvLmf5Hpz8+Zz3zs4JBoiRgU0OOZqjIASQVFmkMEGBASabnqo7q6qp556pjPtvd8/zqnqBhm8gHS39uFz6O6nqp46z95rr+G31votGRmddOzES5wCBHA4MUCCE4cjADRCUn5dcCi0E5QVMBpfNJlnite1R9zPSBKHwWBsB0gBVf6mBqPjIS43O/z2HT+6FP/3NO3ZGOiVr1sgQEkLT2n8CCqVEGNTBIefeRhyjDKgLAYQWfw5cM4HMQgp4gQIEad3+MyWnbr+O1sAti+ygPPARYBCJMZh8LIWTixGD3Gew+BQWoGkpGlMOvSxcQfIQQeMjo5js5xjVu3P6hMOI+vPoSXnyCMmOeboFdjOFgLnIdYH6xW/XuU4lZKKQbUmufW2ae5asxXjPPzaGDfecB+33fkoyvNot2fBpIBGh6P4kRCEPs75OJOjxSHGom2AoMj1EKyHEOGwIDFI/jih+40WAIeUCwPKgXMe4qRYGslBEiBCqTrGCt1hGxO3C6Hx6ow0Q1a/8sUce/TBHPmigONWLydb2IbvKaq1CDPooMTSXegzNzeHiBQb7xRWBBwoceAMaIOzjrGxURqtOsZp/GqTQT8mzSxhcxk33bSFOx9Kufn2h7n5tp8xvzCEfAiArkzQiEbRorBuAG5YaCCncVKceCTHCuCE4j/3G64BnELEYcgRJVjnEBEcBicGqyukSUY+3wag1WxxwnGHcPQxB7DqkJBXHh2ge5ZRr8XC5i30+3MkktOxmkEmNFMBqzF4eEGFxFqcznCS4TDlGdSI9RHrE4omzwZoyRExdD1HxXc0taFiPGrNURpTU7TzDnnT4/ZbLXc8EHPbrQ9xwy3301noAA5vtEkQhCiTIk4haJxzKBGsdWgKQf+NNgEioCxY4+O0RyZdJOiDBJCN0Jv3wWwF5TjjtJdz4vH78PbTp5gIYyIX0tmcMN+bZZANGGY5VvkoqeCsw9MZcd4B7ePIiCKIfI0yDs8FiNWFySk1jdOWnASrhTgzxDEIPipPCfwRcuOjFRgbo1xGxfeo6iqtxgStFTViNWQm8fnqVdNcf9NGrrr6DjAW9N7UR3Lw2zhSSGr4roGYHFEZToNzv6kaQECZBIuH6ML2Z5lh2Otg3IBly/bigrNXccyqvTjp+L3J+5uZXreRdJCSxQZRCuOFIAqbxXh+Si0SFI56o8XE+CSZcygvJLGWfhwTBT4uz0G5wj10bFfJ2iNOM2pRhVAJNksJlGVmdhu9hQ4GRT9x5FmA9iOcNXi2i7UGP6wQVCOmVq7Ea+zNj27cyK13bOTif76dbds2oqVKpd7C9zVgcSZGJAcJd6oReAEEwD2ts+MkBZ1hEktvQRDqLF/u8/6zj+K8dx3I3pFl2+Y2m7e2SdIhyvdxWIwrzEW9Zgl1hZVTK4mqAdOz08jISu68K+GW2zehPYHqOLfceA833XY/2qtgrQGxheMIQOETKKUx+YDVR7+EY49/KQxmMbnj2GP25qiXhdjOOlaMrWA4SNmwZT1DM2TQq6GcoJVBxGKzhDDQrJhqMrlinI2DiH+6bC2fvfxOprdkQI9G06FCBcZHXPCs124XEgB5Qki1w+tOlXbOlcEcOOdABKsUjiqDXg+TdjntdUfw4QtWc/ghlhHTY3rdVrZ2Y0Q0HgpHinOGWrXCyNgo4+NjdBc62GA5X/j6g3TzBp+99CpyF9Jpd8H1d3gWjQRNlPJRrgwsTRmqacEhWAFrU1zaBXYIF6VGa7SBJzHvP/dM6l6X97ztEHS6hWarxey2WebnZukPEoQAUZrcOsAw2YhYvt8k87rBvQ8Kn/zMTXz339eggwbVeh1hgLIWnCtcQllcSSlC5HLt/u/W/YUUAKfLdzK/GFc7Da6KlQynErQDzwrOGYwfMt/vQhwzPl7lc//zrZxxYov25rVsm+3T7Vl8v8pQdcAKo2GN0fGQkdExFvIqd63pc/0ds3zuyz+mH0NvYWsR0XlNtPYIQ48w9BFsYSKsxbntgliqn0UwYgdUQBAUWiuss4AiSTKSJCc3OS5fKFCF5iTVCH7/HSdwwqoJjnxZjaYeMt+epz03ZC7uIwqqtkmWDmg1hImxOiMrDuSq6+c570+/zszsAKKIkVoDnSWF4IjDCIgNUc4HGTzF2pb4ydMKyAsmAO4JDyJLqsvRR7kC1LECVlcwacxgYRtj4xNc+PurOff3DiKKF9jw2KMMsWCbeBh0nDA+0mTFPmPMeSF33N3hx7f1uezrN7FlywLQR7wRAt+jWg3QWrAmLwEY97w5VyIU4SOgtIcxjv4gJctyXD4P1Fi+vMm737qak46us+rIBmNpyuaNc8x0FrBBSC4KLT0CJazcZz+ScIQvfOUhPvn5m5ibmaHSXIYXRuh8WMqjwUqKUNvBHLgnCMCi8LpdxQd44gM6FFkB9UhApgL6/VmIh/zWWcdx8f96I7XsdjY+ouku9BDfI8aQqgWWNWscuO8UW5I6l3xpLf94+S1smXZADJ5HVKuhqlWCtIfC4iwvmDMlgCiwKFK/hh0Oift9yDMgYvmU5oJ3Hst7z9mfyajH2nXTbFvoEZgmgfYgNTSbNfY+yNJXqzj/P32Hf73iZogq1Grj+DZFubSEyPwnOemyK/kA7kmWpwhttGiU1WTakihDPNNhfLTK5z/+Hk45PmX9Iw8wNxfhO0tgBDGWxqjHioMOZKbf4HPf+Cl/f8mttGfmIFJElYBK6GHzDM96SA5GezvNixZAmwznCbnKUZ7PMDHEwxTinLGJcT743mM4720vY6LSZdPDD9Nt51ilybQjU5rxsSH7HXAo19zoc95HLmG2PSCaaBFYTWAURhmsy5c00FOt9y4hACJqSfWKgLUWCQMGwx5Zd4EzX3c0l37i7Uj7ITY8to6MFGdaIAPqI7DPAZMsDJfxmcvWc9GXrmNmto2nWjRHquSSYJRBnEFZhbJ56TQFOxdIcQkOsMrDKosTjbYaz/kszA/J7QIT46N84JyTOf/dKxmpzPDYo1vpzoN1VTzdJnAhe608AEYP5NyPfI0rr74Nr9GkVmlgkwStNM5ZRKQAyZzd1QSgTKSIYKwt0jYKrGg68wN8lfNXHzmdD5y9nIXZDWydztDi8PKMRh4wfvAKttRSLv3aVi7+7F3Mzs4g0Qi1eo3IdXFGY4lK2NiVjppfmBk1XEq87AwUE6qAwZEVDqYTRByaBHTGUJoMegNc3GZ8fJzz338U73nbJMv6AXMPbabrxeReiHHCsimP1vhKLrp8mr/+2NVkVtMaqaCcxdrCfdWqOGTPV5j4/PkATgF2CcY1ztCd7zM+WuWznzqXt6x23HP7PQyth9UGk+fst3yKyZUHcdX187z3Ty5nbi5HgpTWSJ3cOqw4tLWIraJshGARGRa5AxfiCEENYGcZASfgaojEQIKgcK6CQ2HVEKdijBK0E7QSFub72NRnbNTjCx97J2eeMMKWDQ+zbss02tMo41FROS89+nC+eaPi/R+6lNn2gMZoFY1C8MvNXwwPXzAf4KnjTVmM813hGRmXo5XH/Nw0p7/+OL70seNJ5rbyyIY2vsoJrcG6kIMOezm3PNjjf/3TTfz7NXcjnkervg9enqLdEKMUGRqnMgRQTsqTbrHKYcRhBXzj7bScmhPIJEfB9jQ1ClBYKXSVMj4+Bm0sRlcwOqDT34DJc15/ysv5k/NXc+yL6jx8390oSUhEk1mfA1eOEI5Ncs4f38h3r76ZkbEpjDVo0eCK5NnS2j+LffvlBeBp4nxB4VtDohxOBCMxyovobtnGmaceyzc/+1oee+gWtrQtnkRIYhipKPY67HC+v0b43XM+SZ4Zao0x/EDAuCJxoqTwJXaI0X8hgVy+rtzOTaluf46nsMdlZlOkQC7Bghay1NHvzuH5mm986UJee4Rj0333Mj+wuMgjdwOWj2pWHnwsb3n/97nymluoL5/A5QnaRggQWsiULjTis8QJfkkBcE8ehoiANXjpJINKH/QMg619zjxlNd+86I3cv/5HdLdoKjrCpD32PbhFZeoI3v3h7/Gv//YTqlWoVFtY63away8MBLozEt87fiYRQSlhOOgwGMBvvfEVXPaJ0xhOr2H9wx20X2doEhqTOYfudxJv+cB3uPLam6hO1hAzQWVYIw+2gtoxm/R/jxPoqFL76DO4uU9yCstf4BxOQeJZfCv0Zrdx1uuO4//8/ek8+siPmFuAUCtI4YjDD+S29QEXfvRarvrubVTrexF6NRx56dg9f6HNrnnJk8qEp1oov8Y999zL7fd2OPiQgzj6kGVs2dJGh4b+0JD113LBO0/hzgdj7luzlmo4ShLEKLGlK6CesEfyFPv2rHyAp9ic0uanMkB8Q39LnzNfcwLf/sfT+Pmj17Gw1eGrKmkwz0tf+hJ+dFuFN577DxgHlckK2vp4cRXx81KF/eZdgsKlPnmlj1EZw61DtAj/dukHOPnoIWvu+RlBOkJmBzQnhRftfzJv+oPvceUPbqC6vAaZJnDVJZ/g2eAE/1cCsD3OdygURhwucHS3bOOsU47hW595Ew/ffy3TQ02YRyyrpEwc+nKuuT3jref+HSoco16vFni6AyWKIikr/KZeQl7kHEQQr0GvG2PTGb5+6YWc+kqfmQfuZtsgIPFipiqGgw49hTdf8G2uuPZWGsuXISlop7A8O5zglxSAJ8b5FqUEh2Z+bitnnLKaf/vU63lw3XVs6wUEaUBt1Ge/gw/nXRd+l29fdTdebQSvqolyjZ97GJ1gxO70kqhdwTPQTqFNSKYtcWDI+zl5v82bzjiSL37ydNY9fC/9uZw0iFlWzzhkv5N544eu5qprb2JkbBnCs8cJntkHWFL5CodDSVnC5QwL7Rne8LrVfP0f3sgjj/yQfkdjU4/6eMj+hxzLOz58Bd+58nbqrRaVMERyjUhaVv8GZWTxm30JCgiwKsWJRYxPFILneay59xF++kjCeWefSn84TbZgsCl0h+s4/9zT+en9A3567wP4UYgSEPFwuDKN/Ms50k8vAE4ADeJYLGG0GJz26PW6nPHaV/Ktf3gNDz56MzMdR81VGKsZ9j30SH7vD/+NK6+6herEOJ5W6CTDU45cIPdSkMEOJeG/yZfB6h65duAUFWdReYILFLoWcd/dP+enD3a44JzVML8Rk4XMZCmDZAMfOmc1tz+Qcd+DGwiiKs4aFLosqHU7hPDPygS4sky7CnoryoZoGxEHOd35AbUQNt9+PlvX38WWmSqBZzAyz2EvO5F3fOgarvj+HVQmxvCcQ1u9VAjipCh6EGwpAHsuJxaHFDCyc4WvhcMoQy6K4cwsZ712FV/51Knc+9Pr0bTIcsXkeMzkvkey4pUX00+gMVolSj2MxFiVgJks6wnyp5QC9XTKyYnFSlaWLVlSz5GkA+oVxxcvejf9uRk2z6VEyscNhZcfeQTfvWnIFd+/g1pznKDc/CVXUqRE9diz+U9AU9VSKbwshcXaagJnqTXHueL7d3DVzUNeftQRuIEQSsjmuYz+3Da+eNG7qFccSRKTeqaA5G1QFOKIfVoVoJ7JRXEqKWvoAxJtSBcW+OMLXsNbTlQ8tG6G0G9gsz5HvHR/rrkp4B2//2n8xih+EBDk6jdewT9X5CDIFUEQ4DVGecd5n+aamwKOeOkB2KxP6NV5aN0sbzlJ8cfnn0K6ME8iRe0FqGLvnsHJVs/0ANqVmLcOSebmOfP1R/NH5+zFz+68D+0SiC37HtTi5kdz3vy+f0D0GDoKcJlij4//3CMEi2AzhY4CxBvlze/9NDevzdn3oBYkFu1SfnbH/fzRu6c48/VHk7TbZDrAKtD2mT2sZxQA30KmI4a9GaqRz2WfeBud2Q10U6goGK0qalOH8Zcfv57cQr1ZIcoKbz9VewTguQpAqgBJqWSaeqNKboW//MT11KYOY7SqqChHN3V0ZjZw2SfeTjXyGfZmyVWE91wFoKhUVZg0wcZ9Lv3Ee5H2WrZNp1iVgw1YedjhvP2DV3H9DfdSGY9wrodvNCIKq1Oc7BGBZ+8cOqzOUSL4xsPZHpXxiOtvuJe3f/AqVh52ONgAq3K2TWdI+xEu/cR7sHEfkyQoUc/YdaKe/gEUsYJ4YYY3nH4sb3iN8Nj6R/CUwlrD/oe9lCt+Yrjiu7dRbeyDr0OwrohpnY9y+R4j8Jx8AIdyGc4FhVfvHL4OqDb24Yrv3sYVPyn2wFqLp4TH1q3lrNcIbzj9OOLuDLEUe/iskEDnHPgeC92YsarHz67/CFsf+yH9dkqQwOR+K3hg23Je/85PEQQekb+iqMj1+0WDJ1I0XIrsifWfixFwDkQXAA8GTBWlPOJsM2mac/XlH+LFy7awdd0mskCojgVM7vNqXnLSx5kb5DQbEWQ71hQ+QQMshmMF1KNRVlAuAZWTuxCSHh9677GE+R3Md6qYfISGq7DXin35Lx+/ljwTKpVRLD3QKTi9VBCO7AF6nnMcIIrtvQwKVIqlR6UySp4J/+Xj17LXin1puCq5GWW+UyM0t/Oh9x4LSa/YQ5WjbIK2xR4vvps4hVoiKiirbZz1cXgoL2W40KFS9Tn/XS9m0yMK0hjlYiZfvIJvXDfPj29cQ60xijXlSRe3Z8N/5QJRdlUZQ60xyo9vXMO/XDfP5ItXoBhAFrPpEc357zqUStVnuNBBeSkOD2P9Yo+XCkhkBx9AwEiG1eAkIIvBZl3++VPnogaz9Lp9Inwa48J0FHPuhV9FhzWCkD1WfidFCEEIOqzx7gu/ynQU0xhVVKxHrztEDWb550+di826ZDE4FeB0scc7nlHlJAfnL5U0GT1AK5/+QsrJJxzOm0+os2nDYzjl0May7wHL+dxXtjCMUxqVKVy+59TvNBcxdzQqUwzjlM99ZQv7HrgMZQ1WWTZtWM+bT6hz8gmH019I0crHeINy0wHn44p6xhRxEeBhHYg3JE5z/KDOX/zxq5nZvJbYWnKtqI0I7cEoF198J8rP8G2OoNmjA3aODhA0vs1RfsbFF99FezBBdURhtCK2lpnNa/mLP341flAnSXPQQ6wrqHiKPU9RbtFuO0EphVOKeLhAqx5xxMGG6ZkuSItUOkwdeCAXf3Ej7fYc9VYD7RJkz+HfeTpAQLuEeqtBuz3LxV/cwIoDDyKVeVAjTM/0OOJgQ6teYThcAKVQSpVZXsGJQzl8kBhxDucMZBOYvMcfvOcVNGyfwUCDyZlo1Wgno1x06TWoaBRcQdhk3Z7Tv7MuW+4BzqGiES669BrayQgTrTpkGYOBomF7/MF7VmHyHuTjOLdIixPj8FGggbzwLlVOf04xObk3552zP9PrtqKUT2BSDlg5xWe/fCez7Q7VeoXMQSYee1TAzlUBmXhkDqqNKrPtBT775Ts5YOVUYRq0x/S6LZx3zgFMTu5Nf06DystCHANolJCibaUoK/IisBs553eOZJ9ayrZeTE8WWNZqsWVY5dOX3EqgRqi4HsoZnM7hN7SgcxfRATidoZyhYrsEqsWnL7mVLcMqy1oN+tJlWy9j76rjnN85AswWrFdBJEbnLYRkkSbH4IhIkwxHxqtesS9bN7Zx4qPRLFvR4gtffoz27AyNVhVnNMpV9zh/u8ilqOKMR2OkQnt2hi98eT2TUyNF1bEoZjbN86qj98KRkMYWR4hTdhFa0hiVo1SNrNPh9acezakn78fmrR18p2hFFRI/5DOX3YwKfTKVYohQNtrpXTl7rqIzSpkIQ0QmGSr0+cxlt5D4IaNhFR/YtHWOU1+1P68/dRVZp43STYweFLxIUub7jcvRonjtq/cjGTxGnOQ4UsbHKtzw0wH9riWsR1iV41AF9coe9b9LmAHBlg2pGWE9pL/guGFNl7GxCs4Z4mRI0t/Ma1+9P1o5jHU4KTK9CsCg6MUdPC/kzadNMr3+MXQQ4iRjdHyU7163jX68QBgosAaHLTti9wjALiEAEhfwrrWEgaKfdPjudbOMjo/iMOjAZ3r9Jt582hSeF9IbdjBl+K+0VYj2cLbDKScdzmRoifsxzkEl8ohNxL/8208Qrwq5KWRGpGDxfI78NHuu5w4GWaEos5fyPOcW8ar8y3d+QmwqVKIAhyHuZ0yGKae86nCc6SO6qENUkmuU5zBJwjFH7E9dKmRpjHGK0fFxbr2zy9x8l7DeQGeCMjnifLAhRjn2uAE7cfsFjLJgQ5QLUCZHZ0JYbzDXXuDWO/uMjo+ROyGNE+oScswRe2PSIco3qFyjlBLi4ZBqrc6qI+vMbOqilGCdZWJigqtv3Eya9vCiELEKJVIiSR5mVzn/brHm4KnuJ/vepztXv3jvmud/kc3QwzmK5hCr8KKINO1z9Y0bmZgYBwdaaWY2DTnq5U0qtQbxcIBCoawWshjy3HH8ccJcdwar69TrMb3OgMv/9Q7EG8HL++RKYQlAhjhJCKz3K48ExKkdGl23b4kVh6VophBKeLO8ZelPVd5SvocU2sv5S1Ao5deW3heFw8Mt0toJWDQWD4ta+j7ZBUrblRMC6+EkARliCcmVwsv7iNfi8n+9nYXeAq3IYLyQmd4Mrz7ax+SOLAnBsyi04LJ5Tn3NKmzXkpoh1ikiXSP3J+gNDYHvoZaqe1hqPX5htP8TGx2LWy3RrReU8kK6dEOKSPGnkxwnpmi+EIuT7eCVKzuT3OMW1aGdRjmFtoJnBc8plNNlxnS7ItkVNIPssB+L6KByOYHv0x9acm8ZoV/DIqQmIevDqacchUs6oBXK0yHOZqw6dIoJr0U/zcBk7DO5ks997QEG/TmqlQBndxFj79TSLYBRmlx8jNp+58ovX9OFphCLFYOVHKuyolPGKZQLcCJYKWhdwCGSISygWEDTR9Ev/91FJFmCXiwKu4v6P84J1UpAvz/HF772IMtW7I2YlHyY0QpbrHrxCpxJwQ/w+r2UIKpxzMubzG7ehPIicEMq9YBeUsNZi9ZCnu8s875DvYFTiOxY6KoQZ39BE8nj7GSxuQ6LUuCcxYpFOY24gvmkGOWiAL3UZo3zcFaVlU4GyIvvZ5EA0/5SBAw7RwDA8wVnLb24TtAM0JLgqRozmzbxilUNgrBKp5uikiSnWhvl5BOmGA66GKupVRTTc1v4/Je/h/KaWJvvGiefkgtBCvhaicND4aOf/BYPDx9lA5SrYd1i8sqU00iyohdv6VRb8A3Oz8n8IbaSYvwU6yU4P8N6OVYK/mBBSoHYRdEBkyNek89/+XtsmttGvarJrUd/2OU1q6eo1UbJU4OHVgz7HeZmpzE2Q6sqSiy1sX1IMg/lPXdG6ufX8yl4iZRYsixhkLqn4i9DsNQ8h5YmVmkUQYmBL9bE2dIcFPN9lBMG3Q5OWazxcKWf4WSAIkHwqEVjhdMpi1k1za5ZEeXQ2iPJNCOj+7Bteht4Hsb0aM9MMxgsoKSCMnmHk1cfSqUW0jaAHdBqNbnhJwPSJCMK/Z060eKJdtZh0J4jzYfkeUY1CKmGPrUwoBb6S3c19KkEEcbmDOOt+GLAOpxlqVS9oIg3hUNnHfEwphrUqHhV6lGVelShGkbUgiqVoE4laDLsx2WXsyu1AbusGYhCjzRJufXmIY1Wk1SG9FKoVENedfyLMfkCnrF9Tln9YhqhRz9XePQZG9uHH37lMeLhPBO1fchNupPBzsKKF5VLxeL3ewP+/M//nL/4i7eR9e7C9x+fnbQ2RwUT/Hyt4fjVv02vP0utOVGUvS2FbxpLHSWKzHRBFrj+hm+w775VTLoJpXxwWUGJE0zR6TR5yUteT5pk+LUWFo1amju06wlAGAX0FrZy3fXrOeWDK3hk84MkaUgr8Dj5+Bfz79fejgeKXtonj32auUdXK3KgUi9j5Z2N9zspLK4YnPNAlbE8UK0ZGo2fM7PuZxiv9jgBcA7wfsaqo47ife96Ixf907/gk6PER2yOFLU0iLMoyckIcXlAwMM0TMSWmRkqFMKWO0VzYg7njYDTWBegSIuejV0aKixaw8NGQCaCs1BzmjTtksR9yrJwx3C4UI47cUXvQVihWhsrwiItu4xNe+LfiukeOZ0FodNzj7sX+tBuO+JHf86f/9nZVKOAuNdFZNF714UTiCmRgCISyNOEfjdnoSN0uhTvvSB0OznpMMU5XfIcPLdBDS8IRqAK/63WGEUFEaIgMw4Ry2DQK6KZqNJk9Sv2oTvfBS+kUrEMYsOPb7gXUQE235V5fKQkXOQXbq1BaZ/21i77HpDzh3/4u+RpD5xBUFh0Ma9oCR6mxAEEUb/4nqKkbK/afZJfNreICvnR9fcySHIqFQs6pNvpsfqVK4gqI6goCjnxmBXMzc2jVEgUeMTDAd//8U/Bq+N202zf4ow+h8/c+p/yH//jW1g20aS/0EOJX7CfEPyCdvm1ShZhwa/y/R/fRTwYEAUeSoXMzbU58Zi9iaIQhTUkCzOICJmAyh1B4FOvtxDZ/Wv+nVb0ZxMmRlI++p/PIc8HZFkx4csRFar/1zajWRR91OsjBKGPyi2ZgKBJunNgcxQCvlNFRkllKOuDM1hr0MhuvTa2zJeLqzC/7gHe994zOWj/lQzjNlqX0cCvcT674HjTWOvAWZTzcZKB8/BLD1YVkxP9crxbhjhvCSQpkC7ZrRfAlaPYevM9orDDf/7Ld5NlQ9IYRLKCBNs9ubO5+yuAMjPKInFUccjBloOzXRFei/ULzFyKb1Ll1CrB7UbrIdsdw3JkjXGlCOgMrXxmH3mAs88+lsMOP5BBr0/BYiSP+1lXtrqJ/HqUuxWpFFtU/7igzI4KYr1CK+zuKg4cylmULTJ0OJ/QOTydEjX2p4pPJilD3xG3qwTDeT76X34b6/qkaQCuhhXBK6eIGkZx4tBuUGrDX286O1Uwv2dFXOsUTpXjzReJBHZhC7ConJby9GKxGDzfIzeOy7/6XUaXTRH4GmMc6JC5dT/nd99yJMcffzjDwQx4FqdM0TZNDpS0Nq4UqN3cLBRKUJVp8RRxXtEGqHKQRYIIlZVpUb8smChAEbc7xb0CjgyjHJmF0RX7celXfsBda2NGx8fw8gouyFiIezCM+X//6j04O2QQL2CVlMFAwcmjnMOJxpaspruz/neLoBfF4RbrF1pN5SUS6CArBymL9cuCCV0MUt7FUQBZ8vbLf4lDXAZKqLWWkduIj/6PL1Od2pc6CsM8OqzQvm+aV5+6P28681jSXgcIynZpEMlRpV9o1WLV4+4pBUXNoEGpgmqmYH31QXKyIqeOQmnC5gTOOXwH1hPSNKPX6xTdwrv6h5cdPN5Fqbc5znhMTk3xnSuu56c/aTOybwvrBlhbIckdZn4Df/3Rs9HKkvZyoIpbYtsu3qvQhrtzVFDkcnq9edIkw3oK3xUZ1bAxBspDxXHC9bduZmxsBGsT4jQnqlR57Ukvg7y36yMBS966QpwuD6wFDL4niMBf/tXX8JevwPdCVB5ClDHz6CwvP2qKd77jTJLBtqLgxNpiuxcLSXfzxhdBQTbgtScdSVStEqc51iaMjY1y/a0bieMEFQ8XuOknG2iMNCBPGA4V1Uhz0gmH42yK8vQuqNh2GKMqOVDU9+E0uhzcKOS4PME5zRXfvYHrr3mIqf0PwtgOiW/oGodpT/NXf/ZOgkCRDrYhSpe+gI9eLBnbnT18T+FswqtOPJxq6DEcKjAJjVadm27fTDycL5zASqWJcwrlS4ERJEMG/blChZhdfBHKkm6HQ5V5fm1ztrNh+Rjn82d//mV01KJZTcicIFXLzEPbOPglo5z3nt/GuS5amx06HlVJf7Mb40C2OCz9bhubxjgLvhacU1Sr9UUdYakHNbyowYKXo8XiAcNetoQl74r4HuXTYUKsyrAyKAc56rJSx2LwgZTqaJMbb7+Xb/6f+xjb/1D8rI/LIfU8kg338Rf/zxup1yKyzKEIyf0YKzli1e4Nhpccg0k3xXcOUdAXQxA0CKOifkJpVePamx6gm+TUPItHjbm5bbz6xJVElRHiLNu1SUBKtG+xQtftoBlcKSyBV0dE8Vd//UWyYJxmtUHoIsAwv7XLPitrfOiPfgdji88qOJAh4O22EYAIJHFKVGlx8on7MtPehkeNMDB00pzrbnwApSKU9lpcd9P9DPsJoxpQVTqdBU54RZUg9ImTbDdmgbGAh84VIyMj3Hv/I3z58lsYO/BwXJKig5w808w/dh8X/uEpTI6O053fgsIrQSFdViO73VIA4iQnCAOOOa5Ct7NA4CrUAxgOEn504wNor4nCWCq1FmPjUwTKx9gM6xT9uQ2Efo7N893uFMjj/iZom6KJEC/gb/72cpK0wsiIjzUZnu8xP7uNqXH4g3PPYuPDPwfxCxYN0t0YBxCMyQn9nPn2BpwTyHO0DhmdmKJabWKdoMLQY9Bvc90N01SqDbQy9IeWqbHlvO8dp2HzBZTydssFKK4MtMFYQzBa4+cPr+eif7iK5iF744zCqBSFx9Z1Wzj3nBdx8EH7Mt/pIzSAISJmt4QClPZw+QLve8dp7DW2jN7A4KmcWqXBD26apt9v4wUaVasHpHGfW+9eYHzFXtg8xtqAYS+lHvYRpTDG7VZn4In7ZcTgVE5AgPJH+B8fu5z5tqExNkkuKUpVGS4YKlGPZeMjJMMUkaAoRJXdU/2b3CFKUY96pAspxoXkNmFir734yR1d0mRAqxGgcpMgyueO+6eZyTvUAh+0z4atj3He215MtTbGYJgiajdbiKWN87HiMFh07lNvNNi8rcPH/vcPGdlvfwwxzpVWPxbyNMWR4ojRrl6oTtndBMAxGKbUamO8922HsG3zRpwO8Co+naTDHQ9sRnQAWYrCOMQf4Zof3IFqKAJdQYklNn28bIZ6RZNmOVZ2mFJdtl+7nXS+Hxea7cB0ut3qbwdCwS/xAA9lPXwsXhjx8U98m03r5xlbMUGWF+NWhUa54RblxTg04lT5OWV7xLELIYRuh/0oXnBY8UizjFpF4eXbSLI+CkegQ/waXHPtnUjYAmNRyjj8CDxPuPFmx1hjAmV69HoR9VaVd/7WKlw+T+7V8KxFkYKrIC4kVXlJE/MrtGVOFzMQJS/n66kyT19eOlvq/QOH70wJCAmKDBii0SgUlgTjchqNOr14wF/+92tordib0NUQMwaqU8IMI1jjIbKASLHhvqngKKad5yotIoSdHeOII1U54kJwFRQJnrXkXg2Xd3jnb72SZr1JJ9boPGGiPsEPb8vQnuCHCeQKZa0jqlQY9HvccVePib0aWFuMiJ2ZmeH1x68gCOrkcVL0zLnFmDt/gbriFrWOt8Ogabc9zFOmbO/a3gKe79D6taixxLFIk41C8KOQyy79Bg/cvY3xlR45G8o+wBQnAxAfg8ZKjNN9nOrjVFyGxBpZGoyxc93cQgxzRMA6cMqSxzFBUOP1x+/NzMxsMQrAGib2qnDn3QsM+12iShWLRTnPYHNBhyG3rnmUnhviBxFaLO3ZWY45qsHYSIOk18X4Dqu9orBQlRMoftV2oHTECqaPokLHLc0cduWEEimbNYuSLoOPkwiWyr4XVXhpGKxQr7XI05S/+f+uJloxSRB1IQ/wnEYxKBlBRrDUcM4riZiK3LrYSslPkO1UjEAcaKtAJVhJsdrD+I6k12VstMkxR9Voz87hiSOIQnou4dY1G9FBBZtprGdQRlmcyRHV4tof38vWRBHVIkRgGOdEOuZ33vgKXD4Ar+ifxznE6ZIeRn6lp7+AdQs7L0v8hG77phoP7UqeAFeUOXvOR+wTkznb/RdriwnbUWWUr3ztGu68ZYHxvQ9GbI4uE0ra5Sjr4ZkGnq3gWb8QBCcFxYwspot3rg4oprAW/pnFgqdw+YDfecMriPSQYZwiaKKaz9Yk4Nof3YvoGs5YrBQ6tWiRjFrkecK3vreVqX1XYtIEcT7t2Tann7yMWtQkSS0oXdSRuIgXpl5uhwol57AuR3Tx4a2BLB9C2sGlC+RZlzwbYNMFsqxNnvW3b/4TVZVVVCtNcuvxZ//5UoKRQ1FBhyxOcLGFdBuSTiPJNmw6B1kHm/VLs5OVrqC3C0AExV4IRQtTklpqYYvTTx6nPdtG0Jg0Y2rfvfjW96bJ84R6pYUuHVqvdHrRysM4y/d/uI4P/N4riMKfY4zH7NyQE162jFpDMbMwKBpGsDj8MlH0q/aIt+PxgkFph3FFoUatPoVfOYmVx3jgj4LuQ+aDp0DvT6tVLzd/kdvILhFNIIJxMVFrlH+/9mauueZRTj3tbZBMg6oB3VL40uLXe2NUbQOtHbEZAk1w4S4QEajSqyl6Oga9ARNNnxOOaLBh7RwimigMCWsr+P4Pb8dYQSvB5MVsaA8M2npY+vitFldfcxvXXPcKjjmwxdrpLnGccnCWcMG7j+O//e+r8KsBQpdUuR3drF+Z++fY3rwhypGZGOVVCfwGV15xNYN+gnVzaBWUm6EL1Wx/woMPz+OHtbJLlu1CsINb4Pmgtcef/vmneePNbwG3gIhfvldeIIkITmokQ0NiPPxACo/bqZ1eM2jF4VRMYBOUq2OTjAvefSxhltBOBnhoVk6Occ2PHuXqa+7AHxnDmgW0aZH7PbxiHTTCgCD0yfH50U/W84aT9ubRzXMYsWzb3OG971jJpy6ZoNse0Bo1WDdA/8oZwxedTAXFeAo8DXmeU42Wc911P+S663741D+uV9JsjGJM/IToYYcgwno066Pcfdc67rjrb57xiXRtJVWd4EyGiGZXwEgtA0Q7FtpDRscneO879mXrpm0Fpa8TJvYa4UdffwghJIgUksSILTSh5wgwaggoVD4AtTdf+pe7+KP3H8CyesR8z2Nbp8NhB9X44HuO4W/+95UMZRLLEC/34Fc4M2DJxZTt5aliqkXLmtdjYmIKlAbLDhXMgtgi951ZBzZ7HDT0RMhUsDgRWmMNPD2GISuiCuuBMkVnEaoMtwyZyYpmKvF2gYphhRgP66cMVYXUbuNP33MGyysD7u10qekGI/WMjQPhS/+yBvRyVD6LcxWM18ERooq2Ia9Qs9ajNmbZunUjn/vSo0ztN4m1GakOWPvYNO9/x1GMj7YY9Ib4Ar7LeWH4Y9wvJHkchtxY8iwjNxkmTzF58WduM7I8A5v8Ehqq+Lp1hjQfYnJDnufktqCgMXmKzYdk+bB4z9Kc7BLl4s7huxxfYNAdMD7a5P3vOIq1j02TKQ9rcqb2W87nvrSWrVs3UhszhWA7XSIIBiVk4KKiXUg0+DNor84/XvITuqpGtWpAe8x0+oyGbT5w7qnYuA1SGA6104oF5Hn6nqf6fnkyXbRrZfzKPUAEG8/zgXNPZTScZ6bTA9+nWrV0VZ1/vOQOtFcHb7Y0WwBR4TjKDhU11lrEWqJKk04vZs1DmqmJBrgOgWsx/cgjnP+uvRkdHaPX6WIkZM/MqJ2qADAS0ut0GR0d5/x37cPmRx4mcCNg55maqLPmIU2nN6RSaYK1WLvIkFKUvysIcBIDOUrA5RWiwCNLe/ztx37IxIoDiJTCM5b+vGO02ub884/CZj6Z8nDsBr0Dv5aX4DCFqs98zj//SEarMwzmLdpYIqWYWHEAf/uxH5KlPcLAA1MpJoRIXu55gBLngWRlP6BDmyrGZtSaAdfdcC/fuqHHXvusRKxgtGL92i2c93vLqUQB3eE04u1etCm/Rucf8YTucJpKFHDe7y1n/SPbCj5Eq9hrn3351g09rrvhXmrNoOCAzKtl6EhJkuntAOU50M5HGRCX4keg/AZnf+hSbHWceqNGTEZ31jEVR1z6ybdjkj5psuf87ywPKE3AJH0u++TbmYojum3LUOXUGxVsdZyzP3Qpym/gRyA2RUyxxzueV7Ujzg4KURlCjs0DKs0Ww0HGxV98gL0OtBBEWInY+sBmfvfkEU46/gj63TZKl7UCbo82+JVHQ67gSlRa0++2Oen4I/idk0fY+sBmLFXwI/Y60HDxF+9nOMioNFvYPEDI0Sor9niHrKpyYpcsisNglcNKCNbDkwTCOp/6wi0k3ipGWgO0N09XhmzavJ7/+pFT8HzHcNhGUQcTlDF7KaPO7hGI57zhlu2U9hZsgKLOcNjG8x3/9SOnsGnzeroywNNtRlp9Ev1KPvWFWyCsF3toPawqJ7ws0eKBk6chiBARJLc0KhGzc7O874//lYMPegmhizBBxKObN3DUwSFfveRCBv2M2OTY6gDnHJ7V4EKMTnbLmrpdZvvFYXQCLsSzGofFVvrEJmfQz/jqJRdy1MEhj27eiAkiAlfhoIMO5X1/8m1m52ZpRBGSl+znTwklPZ2dcZbIQtSc4DvfvYXv/MCxct8Dya1FKc2j993DWa/QnHX60Qy6G8hMAkpQNkAkK9CyPR7Cc3HzsOIjkqJsWIyKNSmD7gbOOv1oznpFsQdKKXLrWLnfAVzxA8d3vnszUWOCyBV7+PRY4tNKQNFerIMQFdU498NfwI0ewLKpAGU9UCmP3XcvX/30GZx4wuEMZ2NE6mTa4JxFmaAkKdpzPStHzwnKeFjnyHSOqDrD2ZgTTzicr376DB67715QKcp6LJvycaMHcu6HL0FFNXQYYhe59Z+tADggU+CbmEp9gkGc8e4Pf43W+D40AhhaaA8s/en7+G8fORFPQW9hSOwbnAsI7J7z/1w9/cACLmDoG3rdAZ5y/LcPn0h/+j7aA8vQCo1AaE3sw7s//FUGcUalPo5nY3L1zB7YMwqAKYg38E1CODbClVffxt99aRMvOeowjIQQKdY/3OG4/T2+9fn/gDNzmDhF/GL80h4BeG4CoHAo32LiFJe3+dYXPshxB3isf7gDocJIwEtWHcrfXTbNlVffRjg6im9SlAXzXAWgyKyFJc1YSmg0QbPJxz7zA755veXg/SZIsi7Kr7Hmnkc5dXXKl//pg2TdNlmaknp2Twzw3GIAUs+Spil5t82XP/dBTl2dsuaetSi/RpL3OHi/cb75Y8vHLr6WoDlC6EC5lIIXMHxGlFY9rQviVMkumQKKIBfCoEpvKLzrA5dRG5tgxVhAbDOk4rj7rjWcvrrCWa9dRX9hllQEo8ySNOOKpG4x7XLP2Nnt3n5Rn+fKNVrsezDKkIqivzDLWa9dxRnHVbj7zjVI1ZG4hBVjPrWxZbzrA1+kNxTCMCLIFwmhUpTzy9kI7tkIgBRxpwzAVXB45CpH8pxmq8ogTXj7hT9m3wOPpr4soecSonyMrT+7m69edAZnnv5KhjMzGBGcdqjc4BWjljAqK2bd7Zk9DFicJBiVF3QWTqPzDKcsRmA4s40zT38FX73oDLb87G6ifIyejalO5Ox74NG8/cIfM0hTmq0KkuVkkuPwwFWKvcM+rRbQUaX20aeVAdlegevEokQhzuD7Hvfe+xB33m+44J2vJ+8/QpwaOrFHP27z++96HT99uMd9dz+E70eoICKzHkoMnvVRrv748qzf2EujbB1ti7RuSgCBwmQ5/XabM886li///W+z9qG7mZvPEZ0y2oQDD3oNb/3g1Vz57zfTaDXQziLibZ+ytjhL8BmcsKcXgCVLVLyhkmKkLDi0UkSVBj+99wHuvG/IH559Ct1kLT2rsD1hMNjMee88jvseGrDmnvXkEkAEvvXxTYBTKVb2OImuHEHnmRArijQwxIOcuNfhTWes4p8/cRrrHrqLwVxOHmaMNHMO2f9VvOU/XMWV19zMyNgkWgRXtupptaPKf+bWdhkZnXTPLACLsEBRmu2cQ6Ew4nCBo7tlG2edcgzf+sybePj+a5keasI8YlklZeLQl3PN7RlvPffvUOEY9XoVly8UHHWiduj2+U319POleF28Br1ujE1n+PqlF3LqK31mHribbYOAxIuZqhgOOvQU3nzBt7ni2ltpLF+GpKCdWpp3KFL0OT5ejT9PAvC4N3SAKFIZIL6hv6XPma85gW//42n8/NHrWNjq8FWVNJjnpS99CT+6rcIbz/0HjIPKZAVtfby4ivj5zp9LtNM2X+FSn7zSx6iM4dYhWoR/u/QDnHz0kDX3/IwgHSGzA5qTwov2P5k3/cH3uPIHN1BdXoNME7hqOUzxGfbr2ZuAJ5vCvThp06JEY2yDajjKPfev4ScPDLng7acSJxtoG4tPhZn1Q449rMlJr305m+csD96zHk8tw9Pl/L3f4DhfxCfPQobtGV576pFc9N/P4uRDFPfevQnxfAYqY3wEDtjvJN7yR1dx5TU30RrZH0uEvzS8Ui1V+Tz1nj1bAXB6u1Ox46NLMa9crCVMxkiCDL+Rc9+atdzxs4Q/ePdp9NL1DBcUgRcyPT3NIfs7zn7Hyfxsbco99zyE0n2CMHpqv+PXLqrfgbxGBKWFOJlj0O/zW288lq98+g2Mq3X8/MFNaL9CkluaE44XHXAyv/3BwuZXJ2s4qlSHdZzqFQONnuzUlx3Sz7SMz2wCXNkGLYYnVucKCt8aEuVwIhiJUV5Ed8s2zjz1WL752dfy2EO3sKVt8SRCEsNIRbHXYYfz/TXC757zSfLMUGuM4QcCpmwCVVL4GvCU83kX29LVTs41bH+Op1C3Je2siBSd1VjQQpY6+t05PF/zjS9dyGuPcGy6717mBxYXeeRuwPJRzcqDj+Ut7/8+V15zC/XlE7g8QdsIAUILmdKlCXVPIQBPn5J/Zg3wuFDiiarFYSnZNZ2gCXG5pVptsua+B7j9Zxnv/N1X0vAUM/MxyrPYPGdmc5tVh+7FySe/jC0dw/0PrCPJc6JwOZ5VeDYDURi8EjASlFOLsz6LNnWxGOXK13cWgAN52TUspRBIeTCK8fKCWB/fgZ87RCqg6iz0ZkiSIa8/9Sg+9bdv4cRDKvx8zT3kNiXXisxoDth7kvrkgbztD3/EVd+/hZGxKVzu8AjLgRhSTj6zT743S/vmnqsT+MuuRuETiBTFisYZuvN9xkerfPZT5/KW1Y57br+HofWw2mDynP2WTzG58iCuun6e9/7J5czN5UiQ0hqpk1uHFYe2FrFVlI0QLCLDQuJdiCMENWCnFZ04AVdDJAaSsmm2UgR2aohTMUZJ0W2shIX5Pjb1GRv1+MLH3smZJ4ywZcPDrNsyjfY0ynhUVM5Ljz6cb96oeP+HLmW2PaAxWkUXrAa4JZv//DjOz4MAbLdtIoKxtuilUWBF05kf4Kucv/rI6Xzg7OUszG5g63SGFoeXZzTygPGDV7CllnLp17Zy8WfvYnZ2BolGqNVrRK6LMxpLVHbpLJawFXOOUMOdhyg6BVQp2tZKZtWSq1iTgM4YSpNBb4CL24yPj3P++4/iPW+bZFk/YO6hzXS9mNwLMU5YNuXRGl/JRZdP89cfu5rMalojFZSzWFtoFK1UKQTPj6/0PAnAE3GCIg1trUXCgMGwR9Zd4MzXHc2ln3g70n6IDY+tIyPFmRbIgPoI7HPAJAvDZXzmsvVc9KXrmJlt46kWzZEquSQYZRBnUFahbF4yegQ715N3STlbwMMqixONthrP+SzMD8ntAhPjo3zgnJM5/90rGanM8NijW+nOg3VVPN0mcCF7rTwARg/k3I98jSuvvg2v0aRWaWCTBK10wWH0LOL8F1QAdnwg50CLRllNpi2JMsQzHcZHq3z+4+/hlONT1j/yAHNzEb6zBEYQY2mMeqw46EBm+g0+942f8veX3Ep7Zg4iRVQJqIQeNs/wrIfkYPTO69EXQJsM5wm5ylGezzAxxMMU4pyxiXE++N5jOO9tL2Oi0mXTww/TbedYpcm0I1Oa8bEh+x1wKNfc6HPeRy5htj0gmmgRWE1gFEaZghNB5FnF+S+AADyZMMgSxWpB1ARWAjIV0O/PQjzkt846jov/1xupZbez8RFNd6GH+B4xhlQtsKxZ48B9p9iS1LnkS2v5x8tvYcu0A2LwPKJaDVWtEqQ9FBZnXzhPQAoMDIsi9WvY4ZC434c8AyKWT2kueOexvPec/ZmMeqxdN822hR6BaRJoD1JDs1lj74MsfbWK8//Td/jXK26GqEKtNo5v0zKlCxb/Sbz558/tfe4C4Mrpor/wgItNnP2Cyx+NFbC6gkljBgvbGBuf4MLfX825v3cQUbzAhsceZYgF28TDoOOE8ZEmK/YZY84LuePuDj++rc9lX7+JLVsWgD7ijRD4HtVqgNaCNXmpgdzz1rYmwtIJVNrDGEd/kJJlOS6fB2osX97k3W9dzUlH11l1ZIOxNGXzxjlmOgvYICQXhZYegRJW7rMfSTjCF77yEJ/8/E3MzcxQaS7DCyN0PiwjX1MMeaK2w+F64gHjCQDQThOAJ8cJcBpcFSsZTiVoB54VnDMYP2S+34U4Zny8yuf+51s548QW7c1r2Tbbp9uz+H6VoeqAFUbDGqPjISOjYyzkVe5a0+f6O2b53Jd/TD+G3sLWYoO8Jlp7hKFHGPoFp5AorLWl7dwhAeV2CJmWnr4I47RWZeJLkSQZSZKTm7zIYwCN5iTVCH7/HSdwwqoJjnxZjaYeMt+epz03ZC7uIwqqtkmWDmg1hImxOiMrDuSq6+c570+/zszsAKKIkVoDnSWI0uTiiiosG6KcX6R0n3Rtf7k4/wUyAU/VECLlRNLtCy/l6UQEqxSOKoNeD5N2Oe11R/DhC1Zz+CGWEdNjet1WtnZjRDQeqmDwdIZatcLI2Cjj42N0FzrYYDlf+PqDdPMGn730KnIX0ml3wfUfl3aVoIlSfhmvg5iy1VuXCIMsjqTvUrTNL36MGq3RBp7EvP/cM6l7Xd7ztkPQ6RaarRaz22aZn5ulP0gQgmIjbTGyabIRsXy/SeZ1g3sfFD75mZv47r+vQQcNqvU6wgBl7VIhiJMdBNGpZ9jg596I8zz7AM8Mgf5iKJ2CzjCJpbcgCHWWL/d5/9lHcd67DmTvyLJtc5vNW9sk6RDlF8yfxhXIWr1mCXWFlVMriaoB07PTyMhK7rwr4ZbbN6E9geo4t9x4Dzfddj/aq2CtKRd2MQ/hgVPFpLR8wOqjX8Kxx78UBrOY3HHsMXtz1MtCbGcdK8ZWMBykbNiynqEZMujVUE7QqhhIbbOEMNCsmGoyuWKcjYOIf7psLZ+9/E6mt2RAj0bToUIFxkdc8KzXbhfBAZ6b4lAmweIhumAdyzLDsNfBuAHLlu3FBWev4phVe3HS8XuT9zczvW4j6SAli01BZO2FhYrPYjw/pRYVs/DqjRYT45NkzqG8kMRa+nFMFPi4PAdVUqS5slnSCaI94jSjFlUIlWCzlEBZZma30VvoYFD0E0eeBWg/wlmDZ7tYa/DDCkE1YmrlSrzG3vzoxo3cesdGLv7n29m2bSNaqlTqLXxfAxZnYkRykHCn1k3uVAEQAWXBGh+nPTLpIkEfJIBshN68D2YrKMcZp72cE4/fh7efPsVEGBO5kM7mhPneLINswDDLscpHSQVnHZ7OiPMOaB9HRhRB5GuUcXguQKyGRcpZyXHakpNgtRBnhjguhkepPCXwR8iNj1ZgbIxyGRXfo6qrtBoTtFbUiNWQmcTnq1dNc/1NG7nq6jvAWNB7Ux/JwW8X8weSGr5rICZHVIbT7FSOhZ2rAUo0TcRhyBFVqPVFONmJweoKaZKRz7cBaDVbnHDcIRx9zAGsOiTklUcH6J5l1GuxsHkL/f4cieR0rGaQCc1UwGoMHl5QIbEWpzOcZGWfXOkfWB+xPqFo8myAlhwRQ9dzVHxHUxsqxqPWHKUxNUU775A3PW6/1XLHAzG33foQN9xyP52FDuDwRpsEQYgyaZHgQheFNCJY69B4iJOdXhy70wXAlcMNkSKZ4py3NLixoH9NgAil6hgrdIdtTNwu4F+vzkgzZPUrX8yxRx/MkS8KOG71crKFbfieolqLMIMOSizdhT5zc3NFOGe9cp5uOT1THDgD2uCsY2xslEarjnEav9pk0I9JM0vYXMZNN23hzodSbr79YW6+7WfMLwwhHxZiVJmgEY2iRWHdAFxBvoXT20msJN9ucgq37zdbAMqkahkxeFAykIrEOAxe1sKJxeghznOYYtIVSEqaxqRDHxt3CodOB4yOjmOznGNW7c/qEw4j68+hJefIIyY55ugV2M4WAucVM3RtaQJUjlMpqRhUa5Jbb5vmrjVbMc7Dr41x4w33cdudj6I8j3Z7FkzBFq7DUfxICEIf53ycydHiEGPRNkBQ5HoI1kOISkGPdyiC2fk1DztdAMRt71UvSKCLjmJHAR4JyRKw5FBoJygrYDS+aDLPFK9rj7ifkSQOg8HYDlD0MxRXg9HxEJebp4Cxy4SWp2nPxkBvB+EMUNLCUxo/gkolxNgUweFnHoa86H9QtiDMEZYSVM75IAYhLfskw4Lbd+kz71wT8P8DpJOVPOlh31IAAAAASUVORK5CYII=" alt="Ng'ang'a Cars! logo" width="96" height="96" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <svg style="display:none" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 13L5 8C5.5 6.8 6.5 6 7.9 6H16.1C17.5 6 18.5 6.8 19 8L21 13V18C21 18.6 20.6 19 20 19H19C18.4 19 18 18.6 18 18V17H6V18C6 18.6 5.6 19 5 19H4C3.4 19 3 18.6 3 18V13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <circle cx="7" cy="16" r="1.5" fill="currentColor"/>
+                <circle cx="17" cy="16" r="1.5" fill="currentColor"/>
+            </svg>
+        </div>
+        <div class="loader-title">Ng'ang'a Cars!</div>
+        <div class="loader-subtitle">Premium Car Dealership</div>
+        <div class="loader-divider"></div>
+        <div class="loader-tagline">Powered By MortApps Studios</div>
+    </div>
+    <div class="loader-bar-track">
+        <div class="loader-bar-fill"></div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SITE
+═══════════════════════════════════════ -->
+<div id="site">
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+    <a href="#hero" class="nav-logo">
+        <img src="icons/main-logo.png" alt="Ng'ang'a Cars! logo" class="nav-logo-img" width="44" height="44" decoding="async" onerror="this.onerror=null;var l=document.getElementById('loaderLogo');if(l&&l.src&&l.src.indexOf('data:')===0)this.src=l.src;">
+        <div class="brand-text">
+            Ng'ang'a Cars!
+            <small>Drive Something Different</small>
+        </div>
+    </a>
+    <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#latest">Latest</a></li>
+        <li><a href="#showroom">Showroom</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta nav-cta-desktop">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l7 7-7 7M3 12h18"/></svg>
+        Book Test Drive
+    </a>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Switch between dark and light mode" title="Toggle light / dark mode">
+        <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" class="active" onclick="closeMobile()">Home</a>
+    <a href="#latest" onclick="closeMobile()">Latest Cars</a>
+    <a href="#showroom" onclick="closeMobile()">Showroom</a>
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+    <a href="#contact" class="nav-cta" onclick="closeMobile()">Book Test Drive</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-grid">
+        <div class="hero-text">
+            <div class="hero-eyebrow">
+                <span class="dot"></span>
+                <span>Now Accepting Test Drive Bookings</span>
+            </div>
+            <h1 class="hero-heading">
+                Find your next <span class="accent">ride</span><br>
+                at Ng'ang'a Cars!
+            </h1>
+            <p class="hero-text">
+                Kenya's premium digital showroom. Browse our curated inventory of SUVs, sedans, pickups and hatchbacks. Compare side-by-side, book a test drive, and drive home, all from your phone.
+            </p>
+            <div class="hero-actions">
+                <a href="#showroom" class="btn-primary">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/></svg>
+                    Explore Showroom
+                </a>
+                <a href="#latest" class="btn-outline">
+                    View Latest Cars
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l7 7-7 7M3 12h18"/></svg>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-value" data-count="50">0</div>
+                    <div class="hero-stat-label">Cars in Stock</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value" data-count="8">0</div>
+                    <div class="hero-stat-label">Premium Brands</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value" data-count="24/7">0</div>
+                    <div class="hero-stat-label">Online Support</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value" data-count="100">0</div>
+                    <div class="hero-stat-label">% Verified</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <img src="images-cars/bmw-x3-2021-1.jpg" alt="Featured BMW X3" class="hero-visual-img" loading="eager" fetchpriority="high" decoding="async" width="1280" height="853">
+            <div class="hero-visual-badge">
+                <div>
+                    <span class="label">Featured</span>
+                    <div class="name">BMW X3 2021</div>
+                </div>
+                <div>
+                    <span class="label">From</span>
+                    <div class="price" id="hero-price">KES 7.2M</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ BRAND MARQUEE: seamless infinite loop ═══ -->
+<!-- Logos ship with the site in /Brands/ (cream-tinted transparent PNGs):
+     Toyota.png, Nissan.png, Mazda.png, Subaru.png, Mercedes.png, BMW.png.
+     If a file is missing, an elegant text wordmark is shown instead.   -->
+<section class="brand-marquee-section" id="brands" aria-label="Car brands we stock">
+    <div class="brand-marquee-header">
+        <div class="brand-marquee-eyebrow">The Marques We Move</div>
+        <h2 class="brand-marquee-title">Trusted <span class="accent">brands</span></h2>
+    </div>
+    <div class="brand-marquee" id="brand-marquee">
+        <div class="brand-track" id="brand-track">
+            <!-- Logos injected by main.js (duplicated for the seamless loop) -->
+        </div>
+        <div class="brand-marquee-fade" aria-hidden="true"></div>
+    </div>
+</section>
+
+<!-- LATEST CARS -->
+<section class="section latest-section" id="latest">
+    <div class="section-inner">
+        <div class="section-header reveal">
+            <div>
+                <div class="section-eyebrow">Just Arrived</div>
+                <h2 class="section-title">Latest <span class="accent">arrivals</span></h2>
+                <p class="section-desc">Fresh inventory, freshly listed. Swipe to explore. Each car comes with 5 detailed photos and full specs.</p>
+            </div>
+            <div class="actions">
+                <button class="scroll-btn" id="latest-scroll-left" aria-label="Scroll left">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                </button>
+                <button class="scroll-btn" id="latest-scroll-right" aria-label="Scroll right">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Slow-pulsing premium tagline + swipe hint (mobile-first) -->
+        <div class="latest-tagline reveal" aria-hidden="true">
+            <span class="tagline-text">Handpicked. Inspected. Ready to Drive.</span>
+        </div>
+        <div class="swipe-hint reveal" aria-hidden="true">
+            <span class="swipe-hint-track">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <span class="swipe-hint-text">Slide to see more</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+        </div>
+        <div class="latest-rail reveal" id="latest-rail">
+            <!-- Cards injected by main.js -->
+        </div>
+    </div>
+</section>
+
+<!-- SHOWROOM / GALLERY WITH FILTERS -->
+<section class="section showroom-section" id="showroom">
+    <div class="section-inner">
+        <div class="section-header reveal">
+            <div>
+                <div class="section-eyebrow">Digital Showroom</div>
+                <h2 class="section-title">Browse every <span class="accent">car</span></h2>
+                <p class="section-desc">Filter by body type, make, price, or condition. Tap any car to open its 5-image cinematic viewer.</p>
+            </div>
+        </div>
+        <div class="filters-bar reveal" id="filters-bar">
+            <!-- Filters injected by main.js -->
+        </div>
+        <div class="gallery-grid reveal" id="gallery-grid">
+            <!-- Cards injected by main.js -->
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about-section" id="about">
+    <div class="section-inner">
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <div class="section-eyebrow">Our Story</div>
+                <h2 class="section-title">Built on <span class="accent">trust</span>, driven by passion</h2>
+                <p>
+                    Ng'ang'a Cars! was founded with a simple belief: buying a car in Kenya should feel exciting, transparent, and effortless. We curate every vehicle that enters our lot, verifying logbooks, service histories, and mechanical condition before it ever reaches our showroom.
+                </p>
+                <p>
+                    Our digital-first approach means you can browse, compare, and even book a test drive from your phone. No pushy salespeople, no hidden fees. Just real cars, real prices, and a real commitment to getting you behind the wheel of something you'll love.
+                </p>
+                <p>
+                    Every vehicle in our inventory is hand-picked. We focus on quality over volume, and we'd rather turn away a car than sell you something we wouldn't drive ourselves.
+                </p>
+                <span class="signature">James Ng'ang'a, Founder</span>
+            </div>
+            <div class="about-stats reveal">
+                <div class="about-stat">
+                    <div class="about-stat-number" data-count="50">0</div>
+                    <div class="about-stat-label">Cars Sold</div>
+                </div>
+                <div class="about-stat">
+                    <div class="about-stat-number" data-count="100">0</div>
+                    <div class="about-stat-label">% Verified</div>
+                </div>
+                <div class="about-stat">
+                    <div class="about-stat-number" data-count="24/7">0</div>
+                    <div class="about-stat-label">Support</div>
+                </div>
+                <div class="about-stat">
+                    <div class="about-stat-number" data-count="5">0</div>
+                    <div class="about-stat-label">Star Service</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+    <div class="section-inner">
+        <div class="section-header reveal">
+            <div>
+                <div class="section-eyebrow">Get in Touch</div>
+                <h2 class="section-title">Book a <span class="accent">test drive</span></h2>
+                <p class="section-desc">Fill in the form, then choose WhatsApp or email to send it. Prefer to call? Reach us directly.</p>
+            </div>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info-list reveal">
+                <div class="contact-item">
+                    <div class="contact-item-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-item-label">Phone & WhatsApp</div>
+                        <div class="contact-item-value"><a href="tel:+254740596907" id="contact-phone">+254 740 596907</a></div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-item-label">Showroom Location</div>
+                        <div class="contact-item-value" id="contact-location">Ngong Road, Nairobi, Kenya</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-item-label">Email</div>
+                        <div class="contact-item-value"><a href="mailto:sales@ngangacars.co.ke" id="contact-email">sales@ngangacars.co.ke</a></div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-item-label">Opening Hours</div>
+                        <div class="contact-item-value" id="contact-hours">Mon-Sat: 8:00 AM to 6:00 PM · Sun: Closed</div>
+                    </div>
+                </div>
+            </div>
+            <form class="test-drive-form reveal" id="test-drive-form">
+                <div class="form-title">Book Your Test Drive</div>
+                <div class="form-subtitle">Send it via WhatsApp or email. We reply fast.</div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="td-name">Full Name</label>
+                        <input type="text" id="td-name" required placeholder="e.g. Mary Wanjiru">
+                    </div>
+                    <div class="form-field">
+                        <label for="td-phone">Phone Number</label>
+                        <input type="tel" id="td-phone" required placeholder="07XX XXX XXX">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="td-car">Car of Interest</label>
+                        <select id="td-car" required>
+                            <option value="">Select a car</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="td-date">Preferred Date</label>
+                        <input type="date" id="td-date" required>
+                    </div>
+                </div>
+                <div class="form-field full" style="margin-bottom:14px;">
+                    <label for="td-message">Message (optional)</label>
+                    <textarea id="td-message" placeholder="Any specific questions about the car?"></textarea>
+                </div>
+                <button type="submit" class="btn-primary form-submit">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    Send Enquiry
+                </button>
+            </form>
+
+            <!-- ═══ SEND-CHANNEL CHOOSER (WhatsApp / Email) ═══ -->
+            <!-- Opens after a valid submit. Email uses mailto: out of the   -->
+            <!-- box; paste your Formspree endpoint into js/cars-data.js    -->
+            <!-- (NGANGA_CONFIG.formspree) and email becomes a silent POST.  -->
+            <div class="send-chooser" id="send-chooser" role="dialog" aria-modal="true" aria-labelledby="send-chooser-title" hidden>
+                <div class="send-chooser-veil" id="send-chooser-veil"></div>
+                <div class="send-chooser-card" role="document">
+                    <div class="send-chooser-check" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                    </div>
+                    <div class="send-chooser-title" id="send-chooser-title">Your enquiry is ready</div>
+                    <div class="send-chooser-sub">How would you like to send it?</div>
+                    <div class="send-chooser-options">
+                        <button class="send-option wa" id="send-option-whatsapp" type="button">
+                            <span class="send-option-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            </span>
+                            <span class="send-option-body">
+                                <span class="send-option-name">Send via WhatsApp</span>
+                                <span class="send-option-hint">Instant chat · we usually reply within the hour</span>
+                            </span>
+                            <span class="send-option-arrow" aria-hidden="true">›</span>
+                        </button>
+                        <button class="send-option mail" id="send-option-email" type="button">
+                            <span class="send-option-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </span>
+                            <span class="send-option-body">
+                                <span class="send-option-name">Send via Email</span>
+                                <span class="send-option-hint">Goes straight to sales@ngangacars.co.ke</span>
+                            </span>
+                            <span class="send-option-arrow" aria-hidden="true">›</span>
+                        </button>
+                    </div>
+                    <button class="send-chooser-cancel" id="send-chooser-cancel" type="button">Not now, back to the form</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <a href="#hero" class="nav-logo">
+                <img src="icons/main-logo.png" alt="Ng'ang'a Cars! logo" class="nav-logo-img" width="44" height="44" decoding="async" onerror="this.onerror=null;var l=document.getElementById('loaderLogo');if(l&&l.src&&l.src.indexOf('data:')===0)this.src=l.src;">
+                <div class="brand-text">
+                    Ng'ang'a Cars!
+                    <small>Drive Something Different</small>
+                </div>
+            </a>
+            <p>Kenia's premium car dealership. Curated inventory, transparent pricing, and a digital showroom experience designed for the modern driver.</p>
+            <span class="powered">Powered By MortApps Studios</span>
+        </div>
+        <div class="footer-col">
+            <h4>Browse</h4>
+            <ul>
+                <li><a href="#latest">Latest Cars</a></li>
+                <li><a href="#showroom">Showroom</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Brands</h4>
+            <ul id="footer-brands">
+                <!-- Injected by main.js -->
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="tel:+254740596907" id="footer-phone">+254 740 596907</a></li>
+                <li><a href="mailto:sales@ngangacars.co.ke" id="footer-email">sales@ngangacars.co.ke</a></li>
+                <li><a href="#" id="footer-location">Ngong Road, Nairobi</a></li>
+                <li><a href="#" id="footer-hours">Mon-Sat 8AM-6PM</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div>&copy; 2026 Ng'ang'a Cars! All rights reserved.</div>
+        <div>Powered By MortApps Studios</div>
+    </div>
+</footer>
+
+</div><!-- /#site -->
+
+<!-- COMPARE TRAY: roomy on desktop, compact single-row bar on phones.
+     The phone bar sits in the space the floating buttons normally occupy,
+     so it never covers car cards or swipe rails. -->
+<div class="compare-tray" id="compare-tray" role="region" aria-label="Car comparison selection">
+    <button class="compare-tray-close" id="compare-tray-close" type="button" aria-label="Close and clear comparison">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="compare-tray-header">
+        <div class="compare-tray-title">Compare Cars</div>
+        <button class="compare-tray-clear" id="compare-clear" type="button">Clear</button>
+    </div>
+    <div class="compare-tray-slots">
+        <button class="compare-slot" id="compare-slot-1" type="button" title="Tap to remove">Tap the + icon on any car</button>
+        <button class="compare-slot" id="compare-slot-2" type="button" title="Tap to remove">Select a second car</button>
+    </div>
+    <button class="btn-primary compare-tray-cta" id="compare-cta" disabled>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        Compare (<span id="compare-count">0</span>/2)
+    </button>
+</div>
+
+<!-- FLOATING BUTTONS -->
+<a href="#" class="wa-float" id="wa-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<button id="nganga-ai-btn" aria-label="Open NgangaAI assistant">
+    <span class="ai-pulse"></span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3c0 1.31.83 2.42 2 2.83V20l-2 2h6l-2-2V7.83c1.17-.41 2-1.52 2-2.83a3 3 0 0 0-3-3z"/><circle cx="12" cy="14" r="0"/></svg>
+</button>
+
+<div id="nganga-ai-window">
+    <div class="ai-header">
+        <div class="ai-header-info">
+            <div class="ai-avatar">N!</div>
+            <div>
+                <div class="ai-name">NgangaAI</div>
+                <div class="ai-status">Online · Ready to help</div>
+            </div>
+        </div>
+        <button class="ai-close" id="ai-close" aria-label="Close">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+    </div>
+    <div class="ai-messages" id="ai-messages">
+        <div class="ai-msg bot">Jambo! Karibu <strong>Ng'ang'a Cars!</strong> 👋 I'm <strong>NgangaAI</strong>. Ask me about our cars, financing, test drives, or location. How can I help?</div>
+    </div>
+    <div class="ai-suggestions" id="ai-suggestions">
+        <button class="ai-suggestion" data-msg="What cars are available?">Show available cars</button>
+        <button class="ai-suggestion" data-msg="How do I book a test drive?">Book test drive</button>
+        <button class="ai-suggestion" data-msg="Where are you located?">Location</button>
+        <button class="ai-suggestion" data-msg="Tell me about financing">Financing</button>
+    </div>
+    <div class="ai-input-row">
+        <input type="text" class="ai-input" id="ai-input" placeholder="Type your message..." autocomplete="off">
+        <button class="ai-send" id="ai-send" aria-label="Send">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+    </div>
+</div>
+
+<!-- CAR DETAIL MODAL -->
+<div class="car-modal" id="car-modal">
+    <div class="car-modal-content" id="car-modal-content">
+        <!-- Injected by main.js -->
+    </div>
+</div>
+
+<!-- COMPARE MODAL -->
+<div class="car-modal" id="compare-modal">
+    <div class="car-modal-content compare-modal-content" id="compare-modal-content">
+        <!-- Injected by main.js -->
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="js/cars-data.js"></script>
+<script src="js/nganga-ai.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
